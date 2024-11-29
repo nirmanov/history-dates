@@ -1,16 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
-import PTSansRegularEot from '../assets/fonts/PTSans-Regular.eot';
-import PTSansRegularWoff2 from '../assets/fonts/PTSans-Regular.woff2';
-import PTSansRegularWoff from '../assets/fonts/PTSans-Regular.woff';
-import PTSansRegularTtf from '../assets/fonts/PTSans-Regular.ttf';
+import PTSansRegularEot from '@/assets/fonts/PTSans-Regular.eot';
+import PTSansRegularWoff2 from '@/assets/fonts/PTSans-Regular.woff2';
+import PTSansRegularWoff from '@/assets/fonts/PTSans-Regular.woff';
+import PTSansRegularTtf from '@/assets/fonts/PTSans-Regular.ttf';
 
-import PTSansBoldEot from '../assets/fonts/PTSans-Bold.eot';
-import PTSansBoldWoff2 from '../assets/fonts/PTSans-Bold.woff2';
-import PTSansBoldWoff from '../assets/fonts/PTSans-Bold.woff';
-import PTSansBoldTtf from '../assets/fonts/PTSans-Bold.ttf';
+import PTSansBoldEot from '@/assets/fonts/PTSans-Bold.eot';
+import PTSansBoldWoff2 from '@/assets/fonts/PTSans-Bold.woff2';
+import PTSansBoldWoff from '@/assets/fonts/PTSans-Bold.woff';
+import PTSansBoldTtf from '@/assets/fonts/PTSans-Bold.ttf';
 
-import BebasNeueTtf from '../assets/fonts/BebasNeue-Regular.ttf';
+import BebasNeueTtf from '@/assets/fonts/BebasNeue-Regular.ttf';
 
 export const GlobalStyles = createGlobalStyle`
   :root {
@@ -65,5 +65,6 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: "PT Sans", "Bebas Neue", sans-serif;
+    background: var(--grey);
   }
 `;

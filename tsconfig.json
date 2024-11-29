@@ -16,10 +16,9 @@
     "noEmit": false,
     "jsx": "react-jsx",
     "outDir": "./dist",
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "components/*": ["components/*"]
+      "@/*": ["src/*"]
     },
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },

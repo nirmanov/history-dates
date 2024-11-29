@@ -1,15 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Title } from './components/Title/Title';
-import { GlobalStyles } from './styles/GlobalStyles';
+import { GlobalStyles } from '@/styles/GlobalStyles';
+import { HistoricSection } from '@/components/HistoricSection/HistoricSection';
+import { mockData } from '@/mock/data';
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: var(--grey);
 `;
 
 const App: React.FC = () => {
@@ -17,7 +14,7 @@ const App: React.FC = () => {
     <>
       <GlobalStyles />
       <Container>
-        <Title>Hello World</Title>
+        <HistoricSection data={mockData} />
       </Container>
     </>
   );
